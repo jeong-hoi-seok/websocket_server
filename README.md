@@ -1,2 +1,3 @@
-# websocket_server
-웹소켓 테스트 서버
+# WebSocket Server
+
+이 프로젝트는 Node.js를 사용하여 간단한 WebSocket 서버를 구현한 것입니다.

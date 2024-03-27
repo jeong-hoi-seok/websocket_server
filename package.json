@@ -1,0 +1,16 @@
+{
+  "name": "websocket_server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jeong-hoi-seok/websocket_server.git",
+  "author": "정회석 <jsk2343@naver.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5",
+    "ws": "^8.16.0"
+  }
+}
