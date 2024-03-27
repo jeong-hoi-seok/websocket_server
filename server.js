@@ -12,6 +12,10 @@ const parser = new UAParser();
 const app = express();
 app.use(cors());
 
+app.get('/', (req, res) => {
+    res.send('Hello Websocket');
+});
+
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
