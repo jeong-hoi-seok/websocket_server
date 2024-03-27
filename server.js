@@ -10,7 +10,9 @@ import 'moment-timezone';
 const parser = new UAParser();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: "*"
+}));
 
 app.get('/', (req, res) => {
     res.send('Hello Websocket');
@@ -19,7 +21,7 @@ app.get('/', (req, res) => {
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: 'http://localhost:3000',
+        origin: "*",
         methods: ['GET', 'POST'],
     },
 });
